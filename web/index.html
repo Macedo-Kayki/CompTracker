@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CompTracker · VALORANT competitivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@700;800;900&display=swap">
+  <link rel="stylesheet" href="/static/style.css?v=dev">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M0 0h32v25l-7 7H0z' fill='%23d1363a'/><text x='15' y='21' font-size='14' text-anchor='middle' fill='white' font-family='Arial' font-weight='900'>CT</text></svg>">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/"><span class="brand-mark">CT</span><span class="brand-name">CompTracker<small>VALORANT 2021–2026</small></span></a>
+      <nav class="tabs" id="tabs" aria-label="Seções">
+        <a href="#/" data-tab="overview">Visão geral</a>
+        <a href="#/times" data-tab="teams">Times</a>
+        <a href="#/jogadores" data-tab="players">Jogadores</a>
+        <a href="#/mapas" data-tab="maps">Mapas &amp; agentes</a>
+        <a href="#/titulos" data-tab="titles">Títulos</a>
+        <a href="#/confronto" data-tab="h2h">Confronto</a>
+        <a href="#/dados" data-tab="data">Dados</a>
+      </nav>
+      <div class="top-right">
+        <div class="search">
+          <input id="search" type="search" placeholder="Buscar time ou jogador" autocomplete="off" aria-label="Buscar time ou jogador">
+          <div class="search-results" id="search-results"></div>
+        </div>
+        <button class="icon-btn" id="theme-toggle" title="Alternar tema claro/escuro" aria-label="Alternar tema">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app"><div class="empty">Carregando…</div></main>
+
+  <section class="filters" id="filters" aria-label="Filtros globais">
+    <div class="field"><label>Tier</label><div class="segmented" id="f-tier" role="group" aria-label="Tier"></div></div>
+    <div class="field"><label for="f-year">Ano</label><select id="f-year"><option value="">Todos</option></select></div>
+    <div class="field"><label for="f-region">Região do evento</label><select id="f-region"><option value="">Todas</option></select></div>
+    <div class="field"><label for="f-type">Tipo de evento</label><select id="f-type"><option value="">Todos</option></select></div>
+    <div class="field"><label for="f-event">Evento</label><select id="f-event" style="max-width:340px"><option value="">Todos</option></select></div>
+    <button class="chip-reset" id="f-reset">Limpar filtros</button>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><b>CompTracker</b> · trabalho de Tópicos de Big Data em Python · PySpark, Hadoop, pandas, numpy, matplotlib, seaborn, FastAPI e Chart.js</div>
+      <div>Dados: VLR.gg · projeto acadêmico sem vínculo com a Riot Games. VALORANT é marca da Riot Games, Inc.</div>
+    </div>
+  </footer>
+
+  <script src="/static/vendor/chart.umd.min.js"></script>
+  <script src="/static/charts.js?v=dev"></script>
+  <script src="/static/matches.js?v=dev"></script>
+  <script src="/static/app.js?v=dev"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Data lake (gerado pelo scraper e pelo ETL)
+data/
+
+# Imagens de terceiros (direitos da Riot Games): baixe com `python -m scraper.title_photos`
+web/img/titulos/*.jpg
+web/img/titulos/*.png
+web/img/banners/*
+!web/img/banners/.gitkeep
+visaogeral.jpg
+
+# Editores e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

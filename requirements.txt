@@ -1,0 +1,15 @@
+# Big Data e análise
+pyspark>=4.0
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.9
+seaborn>=0.13
+
+# API
+fastapi>=0.110
+uvicorn>=0.30
+
+# Coleta e imagens
+requests>=2.31
+beautifulsoup4>=4.12
+pillow>=10.0
